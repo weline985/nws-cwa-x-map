@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWS CWA Twitter Map</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #map-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>NWS County Warning Area (CWA) Twitter Links</h2>
+    <div id="map-container">
+        <img src="https://www.weather.gov/images/gsp/nwsCWAMap.png" usemap="#cwa-map" alt="NWS CWA Map">
+        <map name="cwa-map">
+            <!-- Example area, add more for each CWA -->
+            <area shape="rect" coords="100,50,200,150" href="https://twitter.com/NWSGSP" alt="NWS Greenville-Spartanburg">
+            <area shape="rect" coords="250,75,350,175" href="https://twitter.com/NWSRAH" alt="NWS Raleigh">
+            <!-- Add more CWAs here with appropriate coordinates and links -->
+        </map>
+    </div>
+</body>
+</html>
