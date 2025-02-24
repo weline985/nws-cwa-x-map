@@ -17,6 +17,11 @@
       width: auto;
       height: auto;
     }
+    /* Container for the WWA map image – left-justified */
+    .wwa-container {
+      text-align: left;
+      margin: 20px;
+    }    
   </style>
 </head>
 <body>
@@ -148,5 +153,11 @@
       <area alt="NWS Caribou, ME" coords="813,206,793,206,785,198,775,191,774,186,772,189,765,174,755,173,754,135,813,134" href="https://x.com/NWSCaribou" name="NWS Caribou, ME" shape="poly" />
     </map>
   </div>
+  <!-- Section for the current WWA map image -->
+  <div class="wwa-container">
+    <a href="https://www.weather.gov/">
+      <img id="wwa-map" src="https://www.weather.gov/wwamap/png/US.png" alt="Current WWA Map">
+    </a>
+  </div>  
 </body>
 </html>
