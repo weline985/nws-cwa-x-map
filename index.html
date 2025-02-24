@@ -17,11 +17,16 @@
       width: auto;
       height: auto;
     }
-    /* Container for the WWA map image – left-justified */
-    .wwa-container {
-      text-align: left;
+    /* Container to display the two images side-by-side */
+    .maps-container {
+      display: flex;
+      justify-content: left;
+      align-items: flex-start;
       margin: 20px;
-    }    
+    }
+    .map-item {
+      margin-right: 20px;
+    }
   </style>
 </head>
 <body>
@@ -153,11 +158,18 @@
       <area alt="NWS Caribou, ME" coords="813,206,793,206,785,198,775,191,774,186,772,189,765,174,755,173,754,135,813,134" href="https://x.com/NWSCaribou" name="NWS Caribou, ME" shape="poly" />
     </map>
   </div>
-  <!-- Section for the current WWA map image -->
-  <div class="wwa-container">
-    <a href="https://www.weather.gov/">
-      <img id="wwa-map" src="https://www.weather.gov/wwamap/png/US.png" alt="Current WWA Map">
-    </a>
-  </div>  
+  <!-- Container for the current WWA map and the SPC Convective Outlook images -->
+  <div class="maps-container">
+    <div class="map-item">
+      <a href="https://www.weather.gov/">
+        <img src="https://www.weather.gov/wwamap/png/US.png" alt="Current WWA Map">
+      </a>
+    </div>
+    <div class="map-item">
+      <a href="https://www.spc.noaa.gov/products/outlook/day1otlk.html">
+        <img src="https://www.spc.noaa.gov/products/outlook/day1otlk-overview.gif" alt="Day 1 SPC Convective Outlook">
+      </a>
+    </div>
+  </div>
 </body>
 </html>
